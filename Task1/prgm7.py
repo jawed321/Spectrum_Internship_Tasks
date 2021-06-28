@@ -14,8 +14,9 @@ for a in range(0,n-2):
             break
         for c in range(0,n):
             if(lst[a]+lst[b]+lst[c]==s):
-                print("triplet is",lst[a],lst[b],lst[c])
-                count=count+1
-                break
+                if(lst[a]!=lst[b]!=lst[c]):
+                    print("triplet is", lst[a], lst[b], lst[c])
+                    count = count + 1
+                    break
 if(count==0):
     print("no triplets found")
